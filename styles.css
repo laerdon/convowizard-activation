@@ -283,8 +283,8 @@ body {
 .phase-notice {
     color: var(--text-muted);
     font-size: 0.85rem;
-    margin-top: 24px;
-    padding-top: 16px;
+    margin-top: 12px;
+    padding-top: 12px;
     border-top: 1px solid var(--border);
 }
 
@@ -742,7 +742,7 @@ kbd {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 20px;
+    margin-top: 12px;
     padding: 16px 20px;
     background: var(--success-light);
     border-radius: var(--radius-md);
