@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="background-canvas"></canvas>
     <!-- Toast notification container -->
     <div id="toast-container"></div>
 
@@ -32,17 +31,17 @@
         <div class="progress-track">
             <div class="progress-step active" data-step="1">
                 <span class="progress-dot"></span>
-                <span class="progress-label">Login</span>
+                <span class="progress-label">Consent</span>
             </div>
             <div class="progress-line"></div>
             <div class="progress-step" data-step="2">
                 <span class="progress-dot"></span>
-                <span class="progress-label">Install</span>
+                <span class="progress-label">Activate</span>
             </div>
             <div class="progress-line"></div>
             <div class="progress-step" data-step="3">
                 <span class="progress-dot"></span>
-                <span class="progress-label">Verify</span>
+                <span class="progress-label">Test</span>
             </div>
         </div>
 
@@ -62,8 +61,7 @@
                         <a id="consent-doc-link" href="https://forms.gle/RQb6T7ajaiJd3NK9A" target="_blank" rel="noopener noreferrer" class="consent-link">Open consent form</a>
                     </div>
                 <div class="consent-card">
-                    <p class="consent-label">View our grant page here</p>
-                    <a href="https://meta.wikimedia.org/wiki/Research:Opportunities_for_Supporting_Community-Scale_Communication" target="_blank" rel="noopener noreferrer" class="consent-link">Open grant page</a>
+                    <p class="consent-label">For more info, see our <a href="https://meta.wikimedia.org/wiki/Research:Opportunities_for_Supporting_Community-Scale_Communication" target="_blank" rel="noopener noreferrer">project page</a>.</p>
                 </div>
                 </div>
             </section>
@@ -74,7 +72,7 @@
                     <span class="phase-number">2</span>
                     <div class="phase-title">
                         <h2>Token Confirmation</h2>
-                        <p>Please confirm that you've received a token from us—you will need it to authenticate to use ConvoWizard, once activated.</p>
+                        <p>You need a unique token to participate in this study. If you don't have one, please contact us. You will be asked to input the token the first time you click reply on a Talk page to activate ConvoWizard.</p>
                     </div>
                 </div>
             </section>
@@ -86,7 +84,7 @@
                     <span class="phase-number">3</span>
                     <div class="phase-title">
                         <h2>Sign in to Wikipedia</h2>
-                        <p>You need an account on Wikipedia to install ConvoWizard.</p>
+                        <p>You need to be logged into your Wikipedia account to activate ConvoWizard.</p>
                     </div>
                 </div>
                 <div class="phase-content">
@@ -98,17 +96,7 @@
                             <span class="card-icon">→</span>
                             <div class="card-text">
                                 <strong>Login</strong>
-                                <span>I have an account</span>
-                            </div>
-                        </a>
-                        <a href="https://wikipedia.org/w/index.php?title=Special:CreateAccount" 
-                           target="_blank" 
-                           class="action-card"
-                           onclick="markStepComplete(1)">
-                            <span class="card-icon">+</span>
-                            <div class="card-text">
-                                <strong>Create Account</strong>
-                                <span>I'm new here</span>
+                                <span>Sign in to your Wikipedia account</span>
                             </div>
                         </a>
                     </div>
@@ -121,7 +109,7 @@
                 <div class="phase-header">
                     <span class="phase-number">4</span>
                     <div class="phase-title">
-                        <h2>Install ConvoWizard</h2>
+                        <h2>Activate ConvoWizard</h2>
                     </div>
                 </div>
                 <div class="phase-content">
@@ -176,7 +164,6 @@
                     <span class="phase-number">5</span>
                     <div class="phase-title">
                         <h2>Test It Out</h2>
-                        <b>NOTICE: Do not click and reply to any comments on the page. While drafting comments to observe ConvoWizard's response is ok, posting these comments will still result in any normal consequences.</b>
                     </div>
                 </div>
                 <div class="phase-content">
@@ -205,8 +192,10 @@
 
                     <div class="success-message" id="success-message">
                         <span class="success-icon">✓</span>
-                        <span>You're all set! ConvoWizard is ready to use.</span>
+                        <span>You're all set! You can engage in Talk page discussions as you normally do.</span>
                     </div>
+
+                    <p class="phase-notice">While this is a test Talk page, posting offensive comments will still trigger automated Wikipedia actions. We recommend not posting offensive comments on the test page (drafting is sufficient for testing).</p>
                 </div>
             </section>
         </main>
